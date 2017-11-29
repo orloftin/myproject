@@ -1,3 +1,6 @@
+<?php 
+    session_start(); 
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -20,7 +23,6 @@
 
  <?php
 	require('conn.inc.php');
-	session_start();
     // If form submitted, insert values into the database.
     if (isset($_POST['username'])){
 		
@@ -35,7 +37,7 @@
 		$rows = mysqli_num_rows($result);
         if($rows==1){
 			$_SESSION['username'] = $username;
-			header("Location: index.php"); // Redirect user to index.php
+			echo '<script>window.location = "index.php"</script>';
             }else{
 				echo "<p>&nbsp;</p>";
 				echo "<p>&nbsp;</p>";

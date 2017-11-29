@@ -2,10 +2,7 @@
 	ini_set('display_errors', 1);
 	error_reporting(~0);
 
-	$host = "localhost";
-	$user = "root";
-	$pass = "12345678";
-	$DB = "project_exhibitor";
+    include_once 'conn.inc.php';
 	
 	
 	$con = mysqli_connect($host,$user,$pass,$DB);

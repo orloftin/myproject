@@ -6,8 +6,8 @@
 
 	$host = "localhost";
 	$user = "root";
-	$pass = "12345678";
-	$DB = "project_exhibitor";
+	$pass = "password";
+	$DB = "project";
 
     $con = mysqli_connect($host,$user,$pass, $DB) or die(sqlerror());
     mysqli_set_charset($con,"utf8");

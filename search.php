@@ -71,7 +71,7 @@
                   		<td valign="middle" align="center"><?=$fa['company_2']?></td>
                   		<td valign="middle" align="center"><?=$fa['phone']?></td>
                   		<td valign="middle" align="center"><?=$fa['email']?></td>
-                        <td valign="middle" align="center"><a href="./?page=edit&com=<? echo $fa['name']?>">Edit</a>
+                        <td valign="middle" align="center"><a href="./?page=edit&com=<? echo $fa['name'].'&id='. $fa['id']  ?>">Edit</a>
                         <a href="JavaScript:if(confirm('ต้องการลบข้อมูล ?')==true){window.location='delete.php?id=<?php echo $fa["id"];?>';}">Delete</a>
                         </td>
                 	</tr>
